@@ -4,7 +4,7 @@ public class test2023 {
     static int n;
     public static boolean isPrime(int n) {
         if(n < 2) return false;
-        for(int i = 2; i < Math.ceil(Math.sqrt(n)); i++) {
+        for(int i = 2; i <= Math.ceil(Math.sqrt(n)); i++) {
             if(n % i == 0) return false;
         }
         return true;
@@ -21,7 +21,7 @@ public class test2023 {
                 dfs(nextNum, len + 1);
             }
         }
-    }
+    }   
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = Integer.parseInt(sc.nextLine());
